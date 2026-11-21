@@ -13,7 +13,7 @@ A lightweight, beginner-friendly **Retrieval-Augmented Generation (RAG)** starte
 Standard LLMs act like students taking a **closed-book exam**—when they don't know a fact from your private notes, they guess plausibly (hallucinate). This project turns the LLM into a student taking an **open-book exam**:
 
 1. **Chunk & Index:** Extracts text page-by-page from your PDF, slices it into overlapping 500-character chunks with page metadata, and embeds them locally using `all-MiniLM-L6-v2`.
-2. **Semantic Retrieval:** Converts a user's question into a vector and retrieves the top 3 most relevant chunks from ChromaDB by meaning rather than exact keyword match.
+2. **Semantic Retrieval:** Converts a user's question into a vector and retrieves the most relevant chunks from ChromaDB by meaning rather than exact keyword match.
 3. **Grounded Generation & Refusal Guardrail:** Checks semantic distance (`threshold = 1.35`). If the question is unrelated to the PDF, it immediately refuses to answer; otherwise, it generates a concise answer using `google/flan-t5-base` and cites the exact source page numbers.
 
 ---
