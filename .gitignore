@@ -221,3 +221,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local PDFs & Vector DBs
+*.pdf
+chroma_db/
+
+# Hugging Face / IDE
+.cache/
+.vscode/
+.idea/
+.DS_Store
