@@ -11,7 +11,7 @@ collection = get_vector_collection(client)
 
 # Pre-index target file if it exists
 try:
-    chunks = load_and_chunk_pdf("data/Harvard Paper on Gen AI and Nature of Work.pdf")
+    chunks = load_and_chunk_pdf("filename.pdf") #add your filename with the pdf extention here
     index_chunks(collection, chunks)
     print(f"Loaded {len(chunks)} searchable chunks into indexing storage!")
 except Exception as e:
