@@ -24,8 +24,7 @@ Standard LLMs act like students taking a **closed-book exam**—when they don't 
 chat-with-your-notes-rag/
 ├── app.py                              # Standalone Python & Gradio application
 ├── requirements.txt                    # Python dependencies
-├── notebooks/
-│   └── chat_with_your_notes_rag.ipynb  # Ready-to-run Google Colab notebook
+├── rag_engine.py                       #the main rag application 
 ├── data/
 │   └── filename.pdf    # Sample 2-page document for testing
 ├── .gitignore
@@ -55,7 +54,7 @@ python app.py
 
 ## Stress-Test Prompts
 
-Once the Gradio interface launches, run these three test queries using the included `sample_club_constitution.pdf`:
+Once the Gradio interface launches, run these three test queries using any pdf file `example: sample_club_constitution.pdf`:
 
 | Test Type | Sample Prompt | Expected Behavior |
 | :--- | :--- | :--- |
