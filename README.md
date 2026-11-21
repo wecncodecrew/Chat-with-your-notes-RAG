@@ -36,9 +36,21 @@ chat-with-your-notes-rag/
 ## Quickstart
 
 ### Option 1: Run in Google Colab (Zero Local Setup)
-1. Click the **Open In Colab** badge at the top of this README (after updating `your-username` in the badge URL) or upload `notebooks/chat_with_your_notes_rag.ipynb` to [Google Colab](https://colab.research.google.com/).
-2. Upload `data/sample_club_constitution.pdf` (or your own syllabus PDF) into the Colab **Files** sidebar.
-3. Run all cells (`Runtime > Run all`) to launch a public Gradio share link.
+```bash
+# Clone the specific Chat-with-your-notes-RAG repository
+!git clone https://github.com/wecncodecrew/Chat-with-your-notes-RAG.git
+
+import os
+# Change the current working directory to the cloned repository
+%cd /content/chat-with-your-notes-rag
+
+# Install dependencies
+!pip install -q -r requirements.txt
+
+# Adjust launch configuration and run
+!sed -i 's/demo.launch()/demo.launch(share=True)/g' app.py
+!python app.py
+```
 
 ### Option 2: Run Locally
 ```bash
