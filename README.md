@@ -65,8 +65,4 @@ Once the Gradio interface launches, run these three test queries using the inclu
 
 ---
 
-## License
-
-MIT License — free to use, remix, and share for workshops, hackathons, and student bootcamps.
-
 *Build for developers 🩶 by Wecncode Developer Community!*
